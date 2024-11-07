@@ -7,10 +7,7 @@
 #include <grp.h>
 #include <pwd.h>
 
-// BSD needs unistd.h for getgrouplist function
-#if defined(BSD) || defined(__APPLE__)
 #include <unistd.h>
-#endif
 
 #else
 // Mocks for Windows
